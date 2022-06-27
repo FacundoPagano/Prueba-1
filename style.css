@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cabecera__lista__link{
+    color: blue;
+    text-decoration: none;
+}
+.cabecera__lista__link--active{
+    color: red;
+}
+.boton a{ 
+    text-decoration: none;
+    color: black;
+}
+
+/* Medidas
+Absolutas: px
+Relativas=
+% Se adapta al lugar donde esta contenido, sea la pantalla o un elemento
+vw y vh Se adaptan directamente al porcentaje de la pantalla*/
+.boton{
+background-color:yellowgreen ;
+    width: 10vw;/* fit-content, se adapta al contenido */
+    height: 10vh;
+
+    /* margin(Todo el conjunto al borde de la pantalla) - padding(Contenido del borde) . border */
+    border: solid 2px black;
+
+/*padding-top 3%
+  padding-right 50%
+  padding-bottom 25%
+  padding-left 10%
+  
+  padding 3% 50% 25% 10% (Va en el orden de arriba, se puede hacer separado como arriba o todo junto respetando el orden)
+  */
+/* Margin auto te lo deja siempre centrado respecto al contenedor */
+  margin: 20px auto;
+}
+
+.cabecera__lista__item{
+    display: inline-block;
+    margin: auto 3%;
+}
+
+.cabecera{
+    background-color: aqua;
+    height: 10%;
+    position: sticky; /* Sticky es en relacion a la vista del usuario, pero debe usarse en un "hijo" directo del body, es decir una etiqueta dentro directamente del body, sin intermediarios.*/
+    top: 0;
+    z-index: 1;
+}
+.cabecera__lista{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cabecera__lista__item--submenu{
+    display: inline-block;
+    margin: 3% ;
+    position: relative;
+}
+.cabecera__lista__item__submenu{
+    list-style: none;
+    position: absolute; /* En relacion al borde del "padre" */
+    border: solid 1px red;
+    top: 100%;
+}
+.section{
+    position: relative;
+
+}
